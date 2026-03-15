@@ -16,7 +16,7 @@ function NumberAdder() {
     }
     setError('')
     try {
-      const response = await fetch('http://localhost:5000/add', {
+      const response = await fetch('https://testproject-ud43.onrender.com/add', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ a: numA, b: numB }),

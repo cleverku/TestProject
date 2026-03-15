@@ -30,7 +30,7 @@ function BlackScholes() {
     setLoading(true)
     setError('')
     try {
-      const response = await fetch('http://localhost:5000/blackscholes', {
+      const response = await fetch('https://testproject-ud43.onrender.com/blackscholes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(inputs),
